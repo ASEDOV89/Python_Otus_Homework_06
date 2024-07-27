@@ -2,7 +2,7 @@ FROM python:3.12.2-bookworm
 
 WORKDIR /app
 
-COPY ../requirements.txt /app/requirements.txt
+COPY requirements.txt /app/requirements.txt
 RUN pip install flask
 RUN pip install gunicorn
 RUN pip install --no-cache-dir -r /app/requirements.txt
